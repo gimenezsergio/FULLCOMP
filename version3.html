@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>FULLCOMP - Servicio Técnico de Compresores Industriales</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#0F172A",
+                        "on-primary": "#F8FAFC",
+                        "secondary": "#334155",
+                        "on-secondary": "#F8FAFC",
+                        "tertiary": "#64748B",
+                        "on-tertiary": "#FFFFFF",
+                        "surface": "#020617",
+                        "on-surface": "#F1F5F9",
+                        "surface-variant": "#1E293B",
+                        "on-surface-variant": "#94A3B8",
+                        "outline": "#475569",
+                        "outline-variant": "#334155",
+                        "background": "#020617",
+                        "on-background": "#F1F5F9",
+                        "error": "#EF4444",
+                        "accent": "#38BDF8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .bg-glass {
+            background-color: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .section-divider {
+            background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.1), transparent);
+            height: 1px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-background font-body text-on-surface">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+            <div class="text-2xl font-extrabold tracking-tighter text-on-surface font-headline uppercase">
+                FULLCOMP
+            </div>
+            <div class="hidden md:flex gap-8 items-center font-headline tracking-tight text-sm font-medium">
+                <a class="text-on-surface border-b-2 border-accent pb-1" href="#">Services</a>
+                <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Brands</a>
+                <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Performance</a>
+                <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Maintenance</a>
+                <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Location</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button
+                    class="bg-accent text-primary px-5 py-2.5 rounded font-bold text-sm hover:brightness-110 active:scale-[0.98] transition-all">
+                    Emergency Service
+                </button>
+                <span class="material-symbols-outlined text-on-surface cursor-pointer">settings_input_component</span>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section class="relative h-[921px] min-h-[700px] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img alt="Industrial Compressor" class="w-full h-full object-cover grayscale brightness-[0.4]"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBazqaycdu3rskaBJVgMxWNmxjS8KZPyphdungOvBV1uB-WqHYoFHtiBMCKYoTzAvzo5x58omycdlZVDQfADS5saHbOso5JLD0rwFQ4FJp3DA0VPiB6HVu6CW2VA5mDbxlwwfCo6bDlIEy7Oi9VQf9abos9kmcWc6SCL8CYQOl-23EFVlmTF89-HS2aY24ZVjZd4nofWFoRDfKfRVDymaxywE_u86io4zTPzHRQTi-dodH4yE8LrKDjz0Tql-SKgdt4yRAGQ3jHdMs" />
+                <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+                <div class="max-w-3xl">
+                    <span
+                        class="inline-block px-3 py-1 bg-accent/10 text-accent text-xs font-bold tracking-[0.2em] uppercase mb-6 border border-accent/20 rounded-sm">
+                        Mantenimiento de Precisión
+                    </span>
+                    <h1
+                        class="text-5xl md:text-7xl font-headline font-extrabold text-on-surface leading-tight tracking-tighter mb-8">
+                        FULLCOMP - Servicio Técnico de Compresores Industriales
+                    </h1>
+                    <p class="text-xl text-on-surface-variant font-light mb-12 max-w-xl leading-relaxed">
+                        Expertos en mantenimiento preventivo y correctivo de compresores a tornillo. Atendemos en toda AMBA para garantizar la continuidad de su producción.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a class="inline-flex items-center justify-center gap-3 bg-on-surface text-surface px-8 py-4 rounded font-extrabold text-lg hover:bg-accent hover:text-primary transition-all group"
+                            href="https://wa.me/1568263177">
+                            Hablar directamente con el técnico
+                            <span
+                                class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Status HUD -->
+            <div class="absolute bottom-16 right-12 hidden lg:block">
+                <div class="bg-glass p-8 rounded shadow-2xl">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span
+                            class="w-2.5 h-2.5 bg-accent rounded-full animate-pulse shadow-[0_0_10px_rgba(56,189,248,0.5)]"></span>
+                        <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-accent">Live System
+                            Support</span>
+                    </div>
+                    <div class="text-4xl font-headline font-bold text-on-surface">24/7</div>
+                    <div class="text-xs text-on-surface-variant mt-1">Disponibilidad para Emergencias</div>
+                </div>
+            </div>
+        </section>
+        <!-- Trust Message Section -->
+        <section class="py-32 bg-surface">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-20 items-center">
+                    <div class="relative">
+                        <div class="aspect-square bg-surface-variant rounded overflow-hidden border border-outline/20">
+                            <img alt="Technical Expert" class="w-full h-full object-cover grayscale opacity-70"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwmMuMCh-6-c7e5MDev6WKcJ7ch2SRhFDAizoHvCUyOvbpEbIuPZmGRYEtAkQtqpsX4zVNYHhqJ8M8DY4wuesjz8AeRfQcL5bTMXXzNttzc1XFKI1lhGYFNXd2uBb395dT7lNfz0PEhSf7JS5KnL7CTajJmo_H8tarVOCvl5kD9Qip3R_G0czW9zdEl06utpmoxvGbD89Nqjl-wOM-Z-c4wSYyxSGs-sOq_KG4KAqb9t62cq6j72RGdUm83GQX99hTKOqzne8T2RM" />
+                        </div>
+                        <div
+                            class="absolute -bottom-10 -right-10 bg-accent p-10 text-primary hidden md:block max-w-sm rounded shadow-2xl">
+                            <p class="text-sm italic font-bold leading-relaxed">"Nuestra prioridad es la eficiencia de
+                                su planta. Brindamos soluciones técnicas con el rigor que la industria demanda."</p>
+                        </div>
+                    </div>
+                    <div class="lg:pl-10">
+                        <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-6">Compromiso Profesional
+                        </h2>
+                        <h3 class="text-4xl md:text-5xl font-headline font-bold mb-10 tracking-tight text-on-surface">
+                            Atención Personalizada por Adrián Rojas de Gaeta</h3>
+                        <div class="space-y-8 text-on-surface-variant leading-loose text-lg font-light">
+                            <p>Entendemos que cada compresor es el corazón de su línea de producción. Por eso, en
+                                FULLCOMP no somos solo reparadores, somos sus aliados estratégicos.</p>
+                            <p>Bajo la dirección técnica de <strong class="text-on-surface font-semibold">Adrián Rojas
+                                    de Gaeta</strong>, ofrecemos un servicio que combina décadas de experiencia empírica
+                                con la precisión técnica que los equipos modernos requieren.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-divider"></div>
+        <!-- Services Section -->
+        <section class="py-32 bg-surface">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="mb-20 text-center lg:text-left">
+                    <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-4">Capacidades Técnicas</h2>
+                    <h3 class="text-4xl md:text-5xl font-headline font-bold text-on-surface">Nuestros Servicios</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Maintenance -->
+                    <div
+                        class="md:col-span-2 bg-surface-variant p-12 flex flex-col justify-between min-h-[400px] rounded border border-outline/10 group hover:border-accent/40 transition-all duration-500">
+                        <div>
+                            <span class="material-symbols-outlined text-5xl mb-8 text-accent">build_circle</span>
+                            <h4 class="text-3xl font-headline font-bold mb-6 text-on-surface">Mantenimiento Preventivo
+                            </h4>
+                            <p class="text-on-surface-variant text-lg max-w-md font-light leading-relaxed">Planes a
+                                medida para maximizar la vida útil de su maquinaria y evitar paradas costosas.
+                                Inspección de filtros, aceites y componentes críticos.</p>
+                        </div>
+                        <div class="flex justify-end pt-8">
+                            <span
+                                class="material-symbols-outlined text-6xl opacity-10 group-hover:opacity-40 transition-opacity">precision_manufacturing</span>
+                        </div>
+                    </div>
+                    <!-- Repair -->
+                    <div
+                        class="bg-surface-variant p-12 rounded border border-outline/10 group hover:border-accent/40 transition-all duration-500">
+                        <span class="material-symbols-outlined text-5xl mb-8 text-accent">handyman</span>
+                        <h4 class="text-2xl font-headline font-bold mb-6 text-on-surface">Reparación Integral</h4>
+                        <p class="text-on-surface-variant text-base leading-relaxed mb-10 font-light">Diagnóstico
+                            avanzado y reparación de unidades de tornillo, motores y sistemas de control electrónicos.
+                        </p>
+                        <div class="h-[2px] w-12 bg-accent group-hover:w-full transition-all duration-700"></div>
+                    </div>
+                    <!-- Insumos -->
+                    <div class="bg-primary p-12 rounded border border-accent/20 md:col-span-1 shadow-2xl">
+                        <span class="material-symbols-outlined text-5xl mb-8 text-accent">inventory_2</span>
+                        <h4 class="text-2xl font-headline font-bold mb-6 text-on-surface">Gestión de Insumos</h4>
+                        <p class="text-on-surface-variant text-base leading-relaxed font-light">Provisión y recambio de
+                            repuestos originales y alternativos de alta calidad. Filtros, lubricantes y kits de
+                            servicio.</p>
+                    </div>
+                    <!-- Data Point -->
+                    <div
+                        class="md:col-span-2 bg-secondary/20 p-12 rounded flex items-center justify-between overflow-hidden relative border border-outline/10">
+                        <div class="z-10">
+                            <h4 class="text-xl font-bold mb-2 text-on-surface uppercase tracking-tight">Diagnóstico
+                                Termográfico</h4>
+                            <p class="text-on-surface-variant font-light">Prevención de fallas mediante análisis de
+                                temperatura en tiempo real.</p>
+                        </div>
+                        <span
+                            class="text-[12rem] font-headline font-black opacity-[0.03] absolute -right-8 -bottom-16 pointer-events-none">PRO</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section -->
+        <section class="py-32 bg-surface">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="mb-20 text-center lg:text-left">
+                    <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-4">Galería</h2>
+                    <h3 class="text-4xl md:text-5xl font-headline font-bold text-on-surface">Proyectos Realizados</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group relative overflow-hidden rounded border border-outline/10 hover:border-accent/40 transition-all duration-500">
+                        <img alt="Proyecto 1"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                            src="doc/img/WhatsApp Image 2026-03-30 at 14.11.23.jpeg" />
+                    </div>
+                    <div class="group relative overflow-hidden rounded border border-outline/10 hover:border-accent/40 transition-all duration-500">
+                        <img alt="Proyecto 2"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                            src="doc/img/WhatsApp Image 2026-03-30 at 14.11.24.jpeg" />
+                    </div>
+                    <div class="group relative overflow-hidden rounded border border-outline/10 hover:border-accent/40 transition-all duration-500">
+                        <img alt="Proyecto 3"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                            src="doc/img/WhatsApp Image 2026-03-30 at 14.11.25.jpeg" />
+                    </div>
+                    <div class="group relative overflow-hidden rounded border border-outline/10 hover:border-accent/40 transition-all duration-500">
+                        <img alt="Proyecto 4"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                            src="doc/img/WhatsApp Image 2026-03-30 at 14.11.26.jpeg" />
+                    </div>
+                    <div class="group relative overflow-hidden rounded border border-outline/10 hover:border-accent/40 transition-all duration-500">
+                        <img alt="Proyecto 5"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                            src="doc/img/WhatsApp Image 2026-03-30 at 14.11.27.jpeg" />
+                    </div>
+                    <div class="group relative overflow-hidden rounded border border-outline/10 hover:border-accent/40 transition-all duration-500">
+                        <img alt="Proyecto 6"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                            src="doc/img/WhatsApp Image 2026-03-30 at 14.11.28.jpeg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Brands Section -->
+        <section class="py-24 bg-surface-variant/30">
+            <div class="max-w-7xl mx-auto px-6">
+                <p class="text-center text-[10px] font-bold uppercase tracking-[0.4em] text-on-surface-variant mb-16">
+                    Expertos en marcas líderes</p>
+                <div
+                    class="flex flex-wrap justify-center gap-16 md:gap-28 items-center opacity-40 grayscale contrast-125">
+                    <span class="text-2xl font-headline font-extrabold tracking-tighter">CETEC</span>
+                    <span class="text-2xl font-headline font-extrabold tracking-tighter">KAESER</span>
+                    <span class="text-2xl font-headline font-extrabold tracking-tighter">INGERSOLL-RAND</span>
+                    <span class="text-2xl font-headline font-extrabold tracking-tighter">SULLAIR</span>
+                    <span class="text-2xl font-headline font-extrabold tracking-tighter">DMD</span>
+                    <span class="text-2xl font-headline font-extrabold tracking-tighter">ATLAS COPCO</span>
+                    <span class="text-2xl font-headline font-extrabold tracking-tighter">ZEBRA</span>
+                    <span class="text-2xl font-headline font-extrabold tracking-tighter">CÓNDOR</span>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us -->
+        <section class="py-32 bg-surface relative overflow-hidden">
+            <div class="absolute inset-0 opacity-[0.02]"
+                style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 40px 40px;"></div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-10">
+                    <div class="max-w-xl">
+                        <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-6">Diferencial Fullcomp
+                        </h2>
+                        <h3 class="text-4xl md:text-5xl font-headline font-bold text-on-surface">¿Por qué confiar en
+                            nuestro servicio técnico?</h3>
+                    </div>
+                    <div
+                        class="text-accent/60 text-xs font-bold uppercase tracking-[0.5em] border-l-2 border-accent/30 pl-8 h-12 flex items-center">
+                        Excelencia Operativa
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <div class="p-2 group">
+                        <div
+                            class="text-accent font-headline text-4xl mb-6 font-black opacity-30 group-hover:opacity-100 transition-opacity">
+                            01</div>
+                        <h4 class="font-bold mb-4 uppercase tracking-tighter text-on-surface text-lg">Technical
+                            Expertise</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed font-light">Conocimiento profundo en
+                            sistemas de aire comprimido industriales y de alta presión.</p>
+                    </div>
+                    <div class="p-2 group">
+                        <div
+                            class="text-accent font-headline text-4xl mb-6 font-black opacity-30 group-hover:opacity-100 transition-opacity">
+                            02</div>
+                        <h4 class="font-bold mb-4 uppercase tracking-tighter text-on-surface text-lg">Guaranteed Parts
+                        </h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed font-light">Utilizamos componentes de
+                            primera línea para asegurar la durabilidad de cada intervención.</p>
+                    </div>
+                    <div class="p-2 group">
+                        <div
+                            class="text-accent font-headline text-4xl mb-6 font-black opacity-30 group-hover:opacity-100 transition-opacity">
+                            03</div>
+                        <h4 class="font-bold mb-4 uppercase tracking-tighter text-on-surface text-lg">Cost Optimization
+                        </h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed font-light">Mantenimiento enfocado en
+                            la eficiencia energética y reducción de gastos operativos.</p>
+                    </div>
+                    <div class="p-2 group">
+                        <div
+                            class="text-accent font-headline text-4xl mb-6 font-black opacity-30 group-hover:opacity-100 transition-opacity">
+                            04</div>
+                        <h4 class="font-bold mb-4 uppercase tracking-tighter text-on-surface text-lg">Direct Line</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed font-light">Comunicación sin
+                            intermediarios directamente con el responsable técnico a cargo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-32 bg-surface-variant relative overflow-hidden border-y border-outline/10">
+            <div class="absolute -right-24 -bottom-24 w-96 h-96 bg-accent/10 rounded-full blur-[120px]"></div>
+            <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+                <div
+                    class="inline-flex items-center gap-3 mb-10 px-5 py-2 bg-error/10 border border-error/20 rounded-full">
+                    <span class="w-2 h-2 bg-error rounded-full animate-ping"></span>
+                    <span class="text-[10px] font-bold text-error uppercase tracking-[0.2em]">Servicio de Emergencia
+                        24hs</span>
+                </div>
+                <h3
+                    class="text-5xl md:text-6xl font-headline font-extrabold mb-10 tracking-tighter text-on-surface leading-[1.1]">
+                    ¿Su producción se detuvo? Contacte ahora.</h3>
+                <p class="text-on-surface-variant text-xl mb-14 font-light max-w-2xl mx-auto">Asistencia inmediata para
+                    fallas críticas en compresores a tornillo.</p>
+                <a class="bg-accent text-primary px-12 py-6 rounded font-black text-xl inline-block hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_40px_rgba(56,189,248,0.2)] transition-all"
+                    href="https://wa.me/1568263177">
+                    WhatsApp 15-6826-3177
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full bg-surface border-t border-outline/10 pt-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 px-6 pb-20">
+            <div class="col-span-1 lg:col-span-2">
+                <div class="font-headline font-black text-xl uppercase text-on-surface mb-8 tracking-tighter">FULLCOMP
+                    INDUSTRIAL PRECISION</div>
+                <p class="text-on-surface-variant font-light text-base tracking-wide max-w-md mb-10 leading-relaxed">
+                    Especialistas en ingeniería de aire comprimido. Brindamos soporte técnico de alta precisión para empresas en toda AMBA.
+                </p>
+                <div class="space-y-4 text-sm font-medium">
+                    <div class="flex items-center gap-4 text-on-surface-variant hover:text-accent transition-colors">
+                        <span class="material-symbols-outlined text-accent">location_on</span>
+                        Lanús Este
+                    </div>
+                    <div class="flex items-center gap-4 text-on-surface-variant hover:text-accent transition-colors">
+                        <span class="material-symbols-outlined text-accent">phone_iphone</span>
+                        15-6826-3177
+                    </div>
+                    <div class="flex items-center gap-4 text-on-surface-variant hover:text-accent transition-colors">
+                        <span class="material-symbols-outlined text-accent">mail</span>
+                        Fullcomp.servicio@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-on-surface font-bold text-xs uppercase tracking-[0.3em] mb-10">Navegación</h5>
+                <ul class="space-y-5 text-sm font-light tracking-wide">
+                    <li><a class="text-on-surface-variant hover:text-accent transition-colors" href="#">Technical
+                            Specs</a></li>
+                    <li><a class="text-on-surface-variant hover:text-accent transition-colors" href="#">Safety
+                            Protocols</a></li>
+                    <li><a class="text-on-surface-variant hover:text-accent transition-colors" href="#">Service
+                            Terms</a></li>
+                    <li><a class="text-on-surface-variant hover:text-accent transition-colors" href="#">Privacy
+                            Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-on-surface font-bold text-xs uppercase tracking-[0.3em] mb-10">Soporte</h5>
+                <ul class="space-y-5 text-sm font-light tracking-wide">
+                    <li><a class="text-on-surface-variant hover:text-accent transition-colors" href="#">Contact
+                            Support</a></li>
+                    <li><a class="text-on-surface-variant hover:text-accent transition-colors" href="#">Emergencias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-outline/5 py-10">
+            <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+                <div class="text-[10px] text-on-surface-variant/50 font-bold tracking-[0.4em] uppercase">
+                    © 2024 FULLCOMP INDUSTRIAL PRECISION. ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
